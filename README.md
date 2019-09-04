@@ -43,12 +43,12 @@ To make possible for Docker to check status of your Spring application you need 
 
 For wget:
 ```
-HEALTHCHECK --interval=5s --timeout=3s CMD wget -qO- --content-on-error=on http://localhost:8080/actuator/docker/health || exit 1
+HEALTHCHECK --interval=15s --timeout=10s CMD wget -qO- --content-on-error=on http://localhost:8080/actuator/docker/health || exit 1
 ```
 
 For curl:
 ```
-HEALTHCHECK --interval=5s --timeout=3s CMD curl -f http://localhost:8080/actuator/docker/health || exit 1 
+HEALTHCHECK --interval=15s --timeout=10s CMD curl -f http://localhost:8080/actuator/docker/health || exit 1 
 ```
 
 The Polish readers can read my article published on Medium on the issue of monitoring the health of application by Docker: https://medium.com/@artur_87325/ciągłe-dostarczanie-sprawdzanie-zdrowia-aplikacji-939af5890b8c
