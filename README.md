@@ -10,7 +10,7 @@ To use services, endpoints and other utilities contained in this project please 
 <dependency>
   <groupId>eu.icole</groupId>
   <artifactId>spring-utils</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
 </dependency>
 ```
 # Endpoints
