@@ -16,7 +16,7 @@
 
     <groupId>eu.icole</groupId>
     <artifactId>spring-utils</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>spring-utils</name>
 
 
@@ -42,7 +42,7 @@
         <connection>scm:git:git://github.com:aradosz79/spring-utils.git</connection>
         <developerConnection>scm:git:git@github.com:aradosz79/spring-utils.git</developerConnection>
         <url>https://github.com/aradosz79/spring-utils</url>
-      <tag>0.0.2</tag>
+      <tag>HEAD</tag>
   </scm>
 
 
