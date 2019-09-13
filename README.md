@@ -10,7 +10,7 @@ To use services, endpoints and other utilities contained in this project please 
 <dependency>
   <groupId>eu.icole</groupId>
   <artifactId>spring-utils</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.3</version>
 </dependency>
 ```
 # Endpoints
@@ -52,5 +52,15 @@ HEALTHCHECK --interval=15s --timeout=10s CMD curl -f http://localhost:8080/actua
 ```
 
 The Polish readers can read my article published on Medium on the issue of monitoring the health of application by Docker: https://medium.com/@artur_87325/ciągłe-dostarczanie-sprawdzanie-zdrowia-aplikacji-939af5890b8c
+
+# Indicators
+
+## telegraf
+
+Checking if telegraf process is running.
+
+## jdbcProfile
+
+Checking if there is a connection to database.
 
 Enjoy!
