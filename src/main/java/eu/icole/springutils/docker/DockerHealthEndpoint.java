@@ -22,7 +22,7 @@ import java.util.StringTokenizer;
 @RestControllerEndpoint(id = "docker")
 public class DockerHealthEndpoint {
 
-    @Value("${icole.docker.health.indicators ?: list}")
+    @Value("${icole.docker.health.indicators: list}")
     String indicators;
 
     @Autowired
@@ -30,7 +30,7 @@ public class DockerHealthEndpoint {
 
     @GetMapping(value = "/health", produces = "text/plain")
     public @ResponseBody ResponseEntity dockerHealthEndpoint() {
-System.out.println(indicators);
+
         List<String> selectedIndicators = new LinkedList<>();
 
         if (indicators == null || indicators.trim().equals("none"))
